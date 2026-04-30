@@ -1,0 +1,22 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: ass7_1_deployment
+spec:
+  replicas: 1
+  selector:
+    matchLables:
+      app: ass7_1
+  template:
+    metadata:
+      lables:
+        app: ass7_1
+    spec:
+      containers:
+      - name: ass7_1
+        image: chai2004/ass7_1:latest
+        imagePullPolicy: Always
+        ports:
+        - containerPort: 8080
+        
+
