@@ -5,11 +5,11 @@ metadata:
 spec:
   replicas: 1
   selector:
-    matchLables:
+    matchLabels:
       app: ass7_1
   template:
     metadata:
-      lables:
+      labels:
         app: ass7_1
     spec:
       containers:
